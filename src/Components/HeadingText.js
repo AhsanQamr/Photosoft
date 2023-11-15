@@ -11,13 +11,13 @@ const HeadingText = (props) => {
     ? props.verticalTextAlign === 'center'
       ? 'justify-center'
       : 'justify-start'
-    : 'justify-start ml-7';
+    : 'justify-start';
 
   const textAlign =
     // if horizontal then text to the end with line breaks
     props.alignment === 'vertical'
       ? props.verticalTextAlign === 'center'
-        ? 'items-center'
+        ? 'items-center '
         : 'items-start'
       : 'items-start';
 
@@ -27,8 +27,8 @@ const HeadingText = (props) => {
 
   return (
     <div className={`flex ${flexStart} ${textAlign} ${flexDirectionStyle} ml-5`}>
-      <h2 className="text-3xl font-bold text-white">{props.heading}</h2>
-      <p className={` ${description} text-gray-500`}>{props.description}</p>
+      <h2 className={`text-3xl font-bold text-white ${props.titleStyling}`}>{props.heading}</h2>
+      <p className={` white-space-preline ${description} text-gray-500`}>{props.description}</p>
     </div>
   );
 };

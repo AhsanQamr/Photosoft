@@ -7,7 +7,7 @@ const EmailInput = () => {
         <input
           type="email"
           placeholder="Enter your email"
-          className="w-1/3 p-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent bg-gray-200"            
+          className="w-1/3 p-3 border border-gray-500 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent bg-gray-500"            
         />
         <button
           className="px-20 py-2 bg-green-500 text-white font-bold rounded-lg mt-4 "
